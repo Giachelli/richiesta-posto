@@ -18,21 +18,6 @@ app.controller('SubheaderAppCtrl', ['$scope', function($scope){
         when: '3:08PM',
         notes: "Ciao sono Michele, avrei bisogno di due posti a Bologna",
         done: true
-      },{
-        face : imagePath,
-        what: 'Brunch this weekend?',
-        who: 'Min Li Chan',
-        when: '3:08PM',
-        notes: " I'll be in your neighborhood doing errands",
-        done: false
-      },
-      {
-        face : imagePath,
-        what: 'Brunch this weekend?',
-        who: 'Min Li Chan',
-        when: '3:08PM',
-        notes: " I'll be in your neighborhood doing errands",
-        done: false
       },
     ];
     

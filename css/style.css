@@ -11,3 +11,10 @@ md-toolbar.md-default-theme:not(.md-menu-toolbar), md-toolbar:not(.md-menu-toolb
 .md-button.md-default-theme.md-fab, .md-button.md-fab{
 	background-color: #4CAF50;
 }
+
+.md-toolbar-tools a {
+    color: #fff;
+    font-size:large;
+    font-family: Rajdhani,sans-serif;
+    letter-spacing:1px;
+}
