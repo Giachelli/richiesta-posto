@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="initial-scale=1" />
+        <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
+        <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular-animate/angular-animate.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular-aria/angular-aria.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular-messages/angular-messages.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular-material/angular-material.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+	<body ng-app="subheaderBasicDemo" ng-controller="SubheaderAppCtrl" style="background-color: #424242" >
+		
+		<div layout="column" layout-padding>
+		<md-toolbar md-scroll-shrink>
+				<div class="md-toolbar-tools" style="background-color: #ff8a65">Richiedi il posto dove vuoi!</div>
+			</md-toolbar>
+			
+			<md-content style="height: 600px;" md-theme="altTheme">
+				<section>
+					<md-subheader class="md-primary">Ultimi 7 giorni</md-subheader>
+					<md-list flex="100" layout-padding>
+						<md-list-item flex="70" flex-xs="90" class="md-3-line" ng-repeat="ultimo in ultimi">
+							<md-icon><i class="material-icons red md-48">mood</i></md-icon>
+							<div class="md-list-item-text">
+								<h3>{{ultimo.what}}</h3>
+								<h4>{{ultimo.who}}</h4>
+								<p>
+									{{ultimo.notes}}
+              					</p>
+            				</div>
+            				<md-divider></md-divider>
+            				<md-icon ng-show="ultimo.done"><i class="material-icons md-48">done</i></md-icon>
+						</md-list-item>
+					</md-list>
+    			</section>
+
+				<section>
+				  	<md-subheader class="md-warn">Ultimi 30 giorni</md-subheader>
+				  	<md-list flex="100" layout-padding>
+				    	<md-list-item flex="70" flex-xs="90" class="md-3-line" ng-repeat="trent in trenta">
+							<md-icon><i class="material-icons md-48">sentiment_satisfied</i></md-icon>
+							<div class="md-list-item-text">
+								<h3>{{trent.what}}</h3>
+								<h4>{{trent.who}}</h4>
+								<p>
+									{{trent.notes}}
+				        		</p>
+				      		</div>
+				      		<md-divider></md-divider>
+            				<md-icon ng-show="trent.done"><i class="material-icons md-48">done</i></md-icon>
+					  	</md-list-item>
+					</md-list>
+				</section>
+		
+<!--
+				<section>
+				  <md-subheader class="md-accent">Archived messages</md-subheader>
+				  <md-list layout="column" layout-padding>
+				    <md-list-item class="md-3-line" ng-repeat="message in messages">
+				      <img ng-src="{{message.face}}" class="md-avatar" alt="{{message.who}}">
+				      <div class="md-list-item-text">
+				        <h3>{{message.what}}</h3>
+				        <h4>{{message.who}}</h4>
+				        <p>
+				          {{message.notes}}
+				        </p>
+				      </div>
+				    </md-list-item>
+				  </md-list>
+				</section>
+-->
+
+			</md-content>
+		</div>
+	</body>
+</html>

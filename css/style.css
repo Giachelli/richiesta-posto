@@ -1,0 +1,9 @@
+.red{
+	color: #EF5350;
+}
+md-toolbar.md-default-theme:not(.md-menu-toolbar), md-toolbar:not(.md-menu-toolbar){
+	background-color: #ff8a65;
+    color: rgba(255,255,255,0.87);
+}
+
+.material-icons.md-48 { font-size: 48px; }
