@@ -15,8 +15,17 @@
 	<body ng-app="subheaderBasicDemo" ng-controller="SubheaderAppCtrl" style="background-color:#424242">
 		
 		<div layout="column" style="background-color:#424242" layout-padding>
-		<md-toolbar md-scroll-shrink>
-				<div class="md-toolbar-tools" style="background-color: #ff8a65">Fai la tua richiesta!</div>
+		<md-toolbar md-scroll-shrink class="md-hue-2" style="background-color: #ff8a65">
+				<div flex="100" class="md-toolbar-tools" style="background-color: #ff8a65">
+					<h2 flex="20" flex-xs="80">Fai la tua richiesta!</h2>
+
+				<md-button class="md-fab">
+					<a href="mailto:info@lensooni.it?subject=Richiesta di Alloggio&body=Ciao Lensooni, sono lo studente con email universitaria:                                              
+	            	    	                                               . Ti scrivo per chiedere ...">
+		            	<md-icon><i class="material-icons">message</i></md-icon>
+	            	</a>
+				</md-button>
+				</div>
 			</md-toolbar>
 			
 			<md-content style="height: 600px;" md-theme="altTheme">

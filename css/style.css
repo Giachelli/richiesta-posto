@@ -8,6 +8,6 @@ md-toolbar.md-default-theme:not(.md-menu-toolbar), md-toolbar:not(.md-menu-toolb
 
 .material-icons.md-48 { font-size: 48px; }
 
-body{
-	background-color: #424242;
+.md-button.md-default-theme.md-fab, .md-button.md-fab{
+	background-color: #4CAF50;
 }
