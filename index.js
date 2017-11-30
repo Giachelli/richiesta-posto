@@ -42,14 +42,21 @@ app.controller('SubheaderAppCtrl', ['$scope', function($scope){
         who: 'Giulia',
         when: '3:08PM',
         notes: " Ciao sono Giulia, avrei bisogno di un posto a Venezia.",
-        done: false
+        done: true
     }, {
 	    face : imagePath,
         what: 'Milano',
-        who: 'Luca',
+        who: 'Alessandro',
         when: '3:08PM',
-        notes: " Ciao sono Luca, avrei bisogno di un posto a Milano.",
+        notes: " Ciao sono Alessandro, avrei bisogno di un posto a Milano.",
         done: true
+    }, {
+	    face : imagePath,
+        what: 'Roma',
+        who: 'Francesco',
+        when: '3:08PM',
+        notes: " Ciao sono Francesco, avrei bisogno di un posto a Roma.",
+        done: false
     }
     
     ];
