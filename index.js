@@ -3,6 +3,22 @@ app.controller('SubheaderAppCtrl', ['$scope', function($scope){
 	var imagePath = 'img/ic_mood_white_48px.svg';
 	var imagePath_sad="img/ic_sentiment_neutral_black_48px.svg";
     $scope.ultimi = [
+	    {
+        face : imagePath,
+        what: 'Torino',
+        who: 'Giacomo',
+        when: '3:08PM',
+        notes: "Ciao sono Giacomo, avrei bisogno di un posto a Torino",
+        done: false
+      },
+       {
+        face : imagePath,
+        what: 'Roma',
+        who: 'Valeria',
+        when: '3:08PM',
+        notes: "Ciao sono Valeria, avrei bisogno di un posto a Roma",
+        done: false
+      },
       {
         face : imagePath,
         what: 'Milano',
@@ -18,7 +34,7 @@ app.controller('SubheaderAppCtrl', ['$scope', function($scope){
         when: '3:08PM',
         notes: "Ciao sono Michele, avrei bisogno di due posti a Bologna",
         done: true
-      },
+      }
     ];
     
     $scope.trenta=[
