@@ -18,8 +18,11 @@ app.controller('SubheaderAppCtrl', ['$scope', function($scope){
         when: '3:08PM',
         notes: "Ciao sono Valeria, avrei bisogno di un posto a Roma",
         done: false
-      },
-      {
+      }      
+    ];
+    
+    $scope.trenta=[
+	    {
         face : imagePath,
         what: 'Milano',
         who: 'Luca',
@@ -34,10 +37,7 @@ app.controller('SubheaderAppCtrl', ['$scope', function($scope){
         when: '3:08PM',
         notes: "Ciao sono Michele, avrei bisogno di due posti a Bologna",
         done: true
-      }
-    ];
-    
-    $scope.trenta=[
+      },
     {
 	    face : imagePath,
         what: 'Torino',
